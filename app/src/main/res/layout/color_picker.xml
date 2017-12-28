@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgColor1"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="#ffffff" />
+
+                    <ImageView
+                        android:id="@+id/imgColor2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#000000" />
+
+                    <ImageView
+                        android:id="@+id/imgColor3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#0000FF" />
+
+                    <ImageView
+                        android:id="@+id/imgColor4"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#6495ED" />
+
+                    <ImageView
+                        android:id="@+id/imgColor5"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#008000" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgColor7"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="#7CFC00" />
+
+                    <ImageView
+                        android:id="@+id/imgColor8"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#FFFF00" />
+
+                    <ImageView
+                        android:id="@+id/imgColor9"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#FFA500" />
+
+                    <ImageView
+                        android:id="@+id/imgColor10"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#FF0000" />
+
+                    <ImageView
+                        android:id="@+id/imgColor11"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#8B4513" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgColor13"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="#800080" />
+
+                    <ImageView
+                        android:id="@+id/imgColor14"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#BA55D3" />
+
+                    <ImageView
+                        android:id="@+id/imgColor16"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#FF1493" />
+
+                    <ImageView
+                        android:id="@+id/imgColor17"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#F08080" />
+
+                    <ImageView
+                        android:id="@+id/imgColor18"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#808080" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>
