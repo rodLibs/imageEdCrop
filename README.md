@@ -22,7 +22,7 @@ imageEdCrop requires at minimum Android 4.0 (API level 14).
 # Gradle Dependency
 
 ## Repository
-The Gradle dependency is available via maven. maven is the default Maven repository used by Android Studio.
+The Gradle dependency is available via Maven. Maven is the default Maven repository used by Android Studio.
 </br>
 
 ## Add repository
@@ -65,18 +65,21 @@ repositories {
   ImageEdCrop.targetBitmap(myBitmap)
                 .photoBackgroundColor(Color.parseColor("#000000"))
                 .changeBackgroundColor(true)
-                .start(MainActivity.this);
+                .start(MyActivity.this);
 </code></pre>
 
 
 ###### Receives the return of the edited image.
 <pre><code>
-  if (requestCode == Constants.REQUEST_IMAGE && resultCode == RESULT_OK){
-            byte[] byteArray = data.getByteArrayExtra(Constants.RETURN_IMAGE_BITMAP);
-            Bitmap bitmap = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length));
-  }
+@Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == Constants.REQUEST_IMAGE && resultCode == RESULT_OK){
+              byte[] byteArray = data.getByteArrayExtra(Constants.RETURN_IMAGE_BITMAP);
+              Bitmap bitmap = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length));
+        }
+   }
 </code></pre>
-
 
 
 #### Activity - Manifest
@@ -92,28 +95,20 @@ repositories {
 
 
 # Api Methods
- <pre><code>
-  createCamera();  -->> create camera and set in frame layout.
+<pre><code>
+  targetBitmap(myBitmap)  -->> Receives a Bitmap.
 </code></pre>
 
 <pre><code>
-  destroyCamera();  -->> destroy and release camera.
+  photoBackgroundColor(myColor)  -->> You receive an int. This method will set the background color of the image.
 </code></pre>
 
 <pre><code>
-  setCameraBack();  -->> switch to rear camera.
+  changeBackgroundColor(true)  -->> You receive a boolean. This method will allow if user can change the background color.
 </code></pre>
 
 <pre><code>
-  setCameraFront();  -->> switch to front camera.
-</code></pre>
-
-<pre><code>
-  pause();   -->>  Pause the camera, freezing the image and the color values.
-</code></pre>
-
-<pre><code>
-  resume(); -->>  resumes the camera, releasing the image and color values.
+  start();  -->> Receive an Activity. This method will send the data to the edit image screen.
 </code></pre>
 </br>
 
