@@ -1,5 +1,4 @@
 
-<img src="camcolor.gif" height="500" width="380">
 
 # ImageEdCrop
 This library allows you to add background to images and leave it with square appearance. 
