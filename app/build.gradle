@@ -1,5 +1,11 @@
 apply plugin: 'com.android.library'
-apply plugin: 'maven'
+
+
+ext {
+    PUBLISH_GROUP_ID = 'com.github.rodlibs'
+    PUBLISH_ARTIFACT_ID = 'imageD_crop'
+    PUBLISH_VERSION = '1.0'
+}
 
 
 android {
@@ -17,20 +23,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-}
-
-uploadArchives {
-    repositories {
-        mavenDeployer {
-            repository(url: "file:///Users/rodrigo/Android/RepositorioLibImageEdit")
-
-            pom.groupId = GROUP
-            pom.artifactId = POM_ARTIFACT_ID
-            pom.version = VERSION_NAME
-        }
+    lintOptions {
+        abortOnError false
     }
+
 }
-task install(dependsOn: uploadArchives)
+
 
 
 dependencies {
@@ -41,3 +39,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }
+
+apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'
