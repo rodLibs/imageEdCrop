@@ -7,7 +7,7 @@ It has some features with increase the size of the image, rotate, change the bac
 </br>
 
 # Sample Project
-You can download the latest sample APK from this repo here: http://link_apk
+You can download the latest sample APK from this repo here: https://github.com/rodLibs/imageZoom/blob/master/Sample/ImageEdCrop.apk 
 </br>
 </br>
 
