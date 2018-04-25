@@ -81,6 +81,30 @@ repositories {
 </code></pre>
 
 
+#### .kt
+
+###### Add bitmap, background color, release background color change and open activity for image editing.
+<pre><code>
+   ImageEdCrop.targetBitmap(myBitmap)
+                .photoBackgroundColor(Color.parseColor("#000000"))
+                .changeBackgroundColor(true)
+                .start(this@MainActivity);
+</code></pre>
+
+
+###### Receives the return of the edited image.
+<pre><code>
+override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (requestCode == Constants.REQUEST_IMAGE && resultCode == RESULT_OK){
+            var byteArray: ByteArray?  = data?.getByteArrayExtra(Constants.RETURN_IMAGE_BITMAP)
+            if (byteArray != null) {
+                var bitmap = BitmapFactory.decodeByteArray(byteArray, 0, byteArray?.size)
+            }
+        }
+</code></pre>
+
+
 #### Activity - Manifest
 ```xml
   <activity android:name="com.github.rodlibs.imagedcrop.ImageEdCropActivity"
