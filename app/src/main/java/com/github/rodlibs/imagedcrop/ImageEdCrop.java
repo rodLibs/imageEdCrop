@@ -26,9 +26,13 @@ public class ImageEdCrop {
     }
 
 
-
     public static ImageEdCrop targetBitmap(Bitmap bit) {
-        return new ImageEdCrop(bit);
+        double originalHeight = bit.getHeight();
+        double scale = originalHeight / 600;
+        int wi = (int) (bit.getWidth() / scale);
+        int hey = (int) (bit.getHeight() / scale);
+        Bitmap b = Bitmap.createScaledBitmap(bit, wi, hey, true);
+        return new ImageEdCrop(b);
     }
 
 
