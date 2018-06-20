@@ -75,7 +75,7 @@ repositories {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == Constants.REQUEST_IMAGE && resultCode == RESULT_OK){
               byte[] byteArray = data.getByteArrayExtra(Constants.RETURN_IMAGE_BITMAP);
-              Bitmap bitmap = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length));
+              Bitmap bitmap = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
         }
    }
 </code></pre>
