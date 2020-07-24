@@ -39,7 +39,7 @@ repositories {
 
 #### Gradle:
 <pre><code>
-    compile 'com.github.rodlibs:imageD_crop:1.3'
+implementation 'com.github.rodlibs:imageD_crop:2.0'
 </code></pre>
 
 
@@ -48,7 +48,7 @@ repositories {
  <dependency>
   <groupId>com.github.rodlibs</groupId>
   <artifactId>imageD_crop</artifactId>
-  <version>1.3</version>
+  <version>2.0</version>
   <type>pom</type>
 </dependency>
 ```
