@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyLibImageEdit.iml" filepath="$PROJECT_DIR$/MyLibImageEdit.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/imageEdCrop.iml" filepath="$PROJECT_DIR$/imageEdCrop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="imageEdCrop/app" />
+      <module fileurl="file://$PROJECT_DIR$/imageEdCrop.iml" filepath="$PROJECT_DIR$/imageEdCrop.iml" group="imageEdCrop" />
     </modules>
   </component>
 </project>

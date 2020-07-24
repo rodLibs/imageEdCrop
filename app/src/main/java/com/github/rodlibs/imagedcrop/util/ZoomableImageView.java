@@ -14,7 +14,7 @@ import android.widget.ImageView;
  * Created by irom on 22/11/2016.
  */
 
-public class ZoomableImageView extends ImageView
+public class ZoomableImageView extends android.support.v7.widget.AppCompatImageView
 {
     Matrix matrix = new Matrix();
 
