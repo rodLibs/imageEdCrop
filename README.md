@@ -41,18 +41,6 @@ repositories {
 <pre><code>
 implementation 'com.github.rodlibs:imageD_crop:2.0'
 </code></pre>
-
-
-#### Maven:
-```xml
- <dependency>
-  <groupId>com.github.rodlibs</groupId>
-  <artifactId>imageD_crop</artifactId>
-  <version>2.0</version>
-  <type>pom</type>
-</dependency>
-```
-</br>
 </br>
 
 

@@ -1,5 +1,6 @@
 package com.github.rodlibs.imagedcrop;
 
+import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -7,9 +8,9 @@ import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.Matrix;
 import android.graphics.drawable.ColorDrawable;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -25,7 +26,7 @@ import com.github.rodlibs.imagedcrop.util.Constants;
 import com.github.rodlibs.imagedcrop.util.ZoomableImageView;
 import java.io.ByteArrayOutputStream;
 
-public class ImageEdCropActivity extends AppCompatActivity{
+public class ImageEdCropActivity extends AppCompatActivity {
 
     private ZoomableImageView imgZoom;
     private TextView txtScale;

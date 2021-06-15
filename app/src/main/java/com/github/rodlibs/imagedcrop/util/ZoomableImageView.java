@@ -8,13 +8,12 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
 import android.view.View;
-import android.widget.ImageView;
 
 /**
  * Created by irom on 22/11/2016.
  */
 
-public class ZoomableImageView extends android.support.v7.widget.AppCompatImageView
+public class ZoomableImageView extends androidx.appcompat.widget.AppCompatImageView
 {
     Matrix matrix = new Matrix();
 
