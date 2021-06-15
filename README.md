@@ -27,9 +27,7 @@ The Gradle dependency is available via Maven. Maven is the default Maven reposit
 ## Add repository
 <pre><code>
 repositories {
-    maven {
-          url  "https://dl.bintray.com/rod120/imageEdCrop"
-        }
+    maven { url 'https://jitpack.io' }
 }
 </code></pre>
 
@@ -39,7 +37,7 @@ repositories {
 
 #### Gradle:
 <pre><code>
-implementation 'com.github.rodlibs:imageD_crop:2.0'
+implementation 'com.github.rodLibs:imageEdCrop:master-SNAPSHOT'
 </code></pre>
 </br>
 
